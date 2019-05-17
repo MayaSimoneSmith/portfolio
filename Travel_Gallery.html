@@ -1,0 +1,117 @@
+<!Doctype html>
+<html>
+<meta charset="utf-8"/>
+<head>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <div class="container">
+    <nav>
+  <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="About_Me.html">About Me</a></li>
+      <li><a href="My_Projects.html">My Projects</a></li>
+      <li><a href="Travel_Gallery.html">Travel Gallery</a></li>
+      <li> <img src= "logo.jpg"class= "logo"> </li>
+
+    </ul>
+  </nav>
+<div class="container">
+  <div class="nav>"
+
+    <div class="nav">
+
+
+    </div>
+    <div class="navbar">
+
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="ocean view.jpg" style="width:100%">
+  <div class="text">Sunset from cruise</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="parasailing.JPG" style="width:100%">
+  <div class="text">Parasailing in Destin,Florida</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="sand.JPG" style="width:100%">
+  <div class="text">My name in the sand</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="airplane.jpg" style="width:100%">
+  <div class="text">Airplane View</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="bahamas.JPG" style="width:100%">
+  <div class="text">In front of the Bahamas Entrance</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<p><b> So far, I've been on two cruises. The Disney Dream Ship and the Carnival Victory. While going on both of those ships, I've travled to the Bahamas. I've been to more than 5 different states.</b></p>
+
+<div class="main">
+
+  <hr style="border:3px solid purple">
+
+    <div class="footer">
+    <p>Instagram: Mayya._._ Snapchat: Maya200213 Email: Maya.Smith@students.jmcss.org</p>
+  </div>
+
+</head>
+</body>
+</html>
